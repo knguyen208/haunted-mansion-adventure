@@ -16,7 +16,7 @@ A spooky *choose-your-path* web game built with HTML and CSS. Explore a haunted 
 - No JavaScript required – pure HTML/CSS magic
 
 ## 🚀 Getting Started
-1. Clone the repo:
+1. Clone the repo: https://github.com/knguyen208/haunted-mansion-adventure.git
 2. Open 'homepage.html' in your browser and start your spooky journey.
 
 ## 📦 Status
