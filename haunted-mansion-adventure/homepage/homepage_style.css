@@ -1,0 +1,133 @@
+.game_screen{
+	background-image: url('house.png');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 60%;
+
+	/*centering for absolute positioning*/
+	left: 0;
+ 	right: 0;
+  	margin: 0 auto;
+	
+	height: 100%;
+}
+
+/*Separate positioning for left button*/
+.lbutton{
+position: absolute;
+bottom: 0px;
+top: 55%;
+left: 1%;
+margin: 10px;
+}
+/*Separate positioning for right button*/
+.rbutton{
+position: absolute;
+bottom: 0px;
+top: 55%;
+right: 1%;
+margin: 10px;
+}
+/*Styling for both left and right buttons*/
+.lbutton, .rbutton {
+	height: 100px;
+	width: 180px;
+	font-family: lucida console;
+	font-size: 20px;
+	font-weight:bold;
+	background-color: white;
+	border-width: 7px;
+	border-color: #4A4A4A;
+	border-style: solid;
+	transition-duration: 0.4s;
+  	cursor: pointer;
+}
+/*Hover effect for both left and right buttons*/
+.lbutton:hover, .rbutton:hover{
+	background-color: #7D7D7D;
+	color: white;
+	width: 250px;
+}
+
+body{
+	background-color: black;
+}
+
+.lightning {
+    position: absolute;
+    animation: lightningAnimation 1.5s linear 5s;
+    right: 5%;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+@keyframes lightningAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.crow {
+position: absolute;
+width: 150px;
+height: 150px;
+}
+
+@keyframes fly {
+
+  0% { transform: translateX(calc(100% - 450px)); }
+  100% { transform: translateX(calc(-100% + 90px)); }
+}
+
+.crow2 {
+  position: absolute;
+  right: 0;
+  animation: fly 10s linear infinite;
+}
+
+#title{
+
+}
+
+h1{
+	text-align: center;
+	color: #F3E2BF;
+	text-shadow: 2px 2px black;
+	letter-spacing: -4px;
+	line-height: 0.7;
+	font-family: Garamond, serif; ;
+	font-weight: bold;
+	font-size: 40pt;
+
+	animation-name: slide-in;
+	animation-fill-mode: forwards;
+	animation-duration: 0.9s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+
+	position: absolute;
+	top: 30%;
+	right: 15px;
+}
+@keyframes slide-in{
+	0%{
+		opacity: 0;
+transform: translateX(10px);
+	}
+	100%{
+		opacity: 1;
+transform: translateX(-30px);
+	}
+}
+
+
+}

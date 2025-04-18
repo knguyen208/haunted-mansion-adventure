@@ -1,0 +1,188 @@
+.game_screen{
+	background-color: black;
+	position: absolute;
+	width: 60%;
+
+	/*centering for absolute positioning*/
+	left: 0;
+ 	right: 0;
+  	margin: 0 auto;
+	
+	height: 100%;
+
+	animation-name: white;
+	animation-fill-mode: forwards;
+	animation-delay: 22.5s;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+}
+
+h1{
+	text-align: center;
+	color: darkred;
+	font-family: Garamond, serif; ;
+	font-weight: bold;
+	font-size: 50pt;
+	animation-name: zoom-in;
+	animation-fill-mode: forwards;
+	animation-duration: 0.9s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	
+}
+
+p{
+	position: absolute;
+	top: 30%;
+	text-align: center;
+	color: white; /*yellow*/
+	font-family: courier new;
+	font-size: 14pt;
+}
+/*Separate positioning for left button*/
+.lbutton{
+position: absolute;
+bottom: 0;
+top: 55%;
+left: 1%;
+margin: 10px;
+}
+/*Separate positioning for right button*/
+.rbutton{
+position: absolute;
+bottom: 0;
+top: 55%;
+right: 1%;
+margin: 10px;
+}
+.lbutton, .rbutton {
+	opacity: 0%;
+	height: 100px;
+	width: 180px;
+	font-family: lucida console;
+	font-size: 20px;
+	font-weight:bold;
+	background-color: white;
+	border-width: 7px;
+	border-color: #4A4A4A;
+	border-style: solid;
+	transition-duration: 0.4s;
+  	cursor: pointer;
+  	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 24s;
+}
+/*Hover effect for both left and right buttons*/
+.lbutton:hover, .rbutton:hover{
+	background-color: darkred;
+	border-color: darkred;
+	color: white;
+	width: 250px;
+}
+/*transition the starting opacity from 0% to 100% line by line*/
+.l1,.l2,.l3,.l4,.l5,.l6,.l7{
+	opacity: 0%;
+	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
+.l1{
+animation-delay: 2s;	
+}
+.l2{
+animation-delay: 5s;
+}
+
+.l3{
+animation-delay: 8s;
+}
+
+.l4{
+animation-delay: 11s;
+}
+
+.l5{
+animation-delay: 14s;
+}
+
+.l6{
+animation-delay: 17s;
+}
+.l7{
+animation-delay: 20s;
+}
+
+p{
+	animation-name: black;
+animation-fill-mode: forwards;
+animation-delay: 22.5s;
+animation-duration: 0.6s;
+animation-timing-function: ease-in;
+}
+/* Turn Red animation delayed*/
+.succumb{
+animation-name: red;
+animation-fill-mode: forwards;
+animation-delay: 22.5s;
+animation-duration: 0.6s;
+animation-timing-function: ease-in;
+}
+@keyframes fade-in {
+	0%{
+		opacity: 0% ;
+	}
+
+	100% {
+
+		opacity: 100% ;
+	}
+}
+
+@keyframes red {
+	0% {
+		color: white;
+	}
+	100% {
+		color: red;
+	}
+}
+
+@keyframes black {
+	0% {
+
+		color: white;
+	}
+	100% {
+		color: black;
+	}
+}
+@keyframes white {
+	0% {
+		background-color: black;
+	}
+	100% {
+		background-color: white;
+	}
+}
+@keyframes zoom-in{
+	0%{
+transform: scale(0%);
+	}
+	100%{
+transform: scale(100%);
+	}
+}
+
+body{
+	background-color: black;
+	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
